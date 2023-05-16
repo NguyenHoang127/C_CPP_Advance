@@ -1,13 +1,12 @@
 # C_CPP_Anvanced
 ## Lesson 1: Complier
-Quá trình xử lý file .C sang file .exe
-  - File .c là file source và file .h là file header
-  
-  - Preprocessor quá trình tiền xử lý build thành file .I gọi là preprocessed source
-  + gcc -E B1_Complier.c -o  B1_Complier.i
 
-  - Compiler từ file.I thành file.s gọi là Assemply code
-  + gcc B1_Complier.i -S -o main.s
+Dịch từ ngôn ngữ do lập trình viên viết (C/C++, PHP, HTML, ) sang ngôn ngữ máy.
 
-  - Assembler tạo ra file object file .o +library
-  - Linker tạo ra chương trình executable .exe
+Từ file main.c/cpp, main.h,... nó preprocess sang file main.i từ đây các MACRO hay include sẽ được thêm vào main.i.
+
+Sau đó main.i sẽ được compiler dịch sang file main.s dưới dạng assembly.
+
+=> được assembler sang file object.
+
+=> Linker tạo ra exucutable file. main.exe
