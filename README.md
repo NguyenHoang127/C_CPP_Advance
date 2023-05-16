@@ -1,12 +1,18 @@
 # C_CPP_Anvanced
 ## Lesson 1: Complier
 
-Dịch từ ngôn ngữ do lập trình viên viết (C/C++, PHP, HTML, ) sang ngôn ngữ máy.
+Biên dịch từ ngôn ngữ do lập trình viên viết trên các ngôn ngữ (C/C++, Python ) sang ngôn ngữ máy.
 
-Từ file main.c/cpp, main.h,... nó preprocess sang file main.i từ đây các MACRO hay include sẽ được thêm vào main.i.
+Một file c thông dụng bao gồm:
+- File .c là file source và file .h là file header
 
-Sau đó main.i sẽ được compiler dịch sang file main.s dưới dạng assembly.
+Quá trình xử lý biên dịch bao gồm:
+- B1: Preprocessor quá trình tiền xử lý build thành file .I gọi là preprocessed source
+- gcc -E B1_Complier.c -o  B1_Complier.i
 
-=> được assembler sang file object.
+- B2: Compiler từ file.I thành file.s gọi là Assemply code
+- gcc B1_Complier.i -S -o main.s
 
-=> Linker tạo ra exucutable file. main.exe
+- B3: Assembler tạo ra file object file .o +library
+- B4: Linker tạo ra chương trình executable .exe
+
