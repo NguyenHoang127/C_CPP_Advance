@@ -1,10 +1,9 @@
-# C_CPP_Anvanced
-## Lesson 1: Complier
+# Lesson 1: Complier
 
-Biên dịch từ ngôn ngữ do lập trình viên viết trên các ngôn ngữ (C/C++, Python ) sang ngôn ngữ máy.
+> Biên dịch từ ngôn ngữ do lập trình viên viết trên các ngôn ngữ (C/C++, Python ) sang ngôn ngữ máy.
 
 Một file c thông dụng bao gồm:
-- File .c là file source và file .h là file header
+- File .c  là file source và file .h là file header
 
 Quá trình xử lý biên dịch bao gồm:
 - B1: Preprocessor quá trình tiền xử lý build thành file .I gọi là preprocessed source
@@ -15,4 +14,7 @@ Quá trình xử lý biên dịch bao gồm:
 
 - B3: Assembler tạo ra file object file .o +library
 - B4: Linker tạo ra chương trình executable .exe
+
+---
+# Lesson 2: Marco
 
