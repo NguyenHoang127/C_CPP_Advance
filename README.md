@@ -18,7 +18,10 @@ Quá trình xử lý biên dịch bao gồm:
 ---
 # Lesson 2: Marco
 
+- Marco trong C là một cách ngắn gọn để định nghĩa các hằng số và hàm ngắn gọn bằng cách sử dụng từ khóa #define
+- Biên dịch có thể kể đến là sử dụng #ifdef và #ifndef để kiểm tra biến vừa được tạo đã được define trong hàm main hay chưa
 
+#endif
 ```
 #define MAX_ARR_LENGTH 100
 
@@ -27,5 +30,30 @@ int a[MAX_ARR_LENGTH];
 int main(){
     printf("MAX_ARR_LENGTH: %d", MAX_ARR_LENGTH);
     return 0;
+}
+```
+
+```
+#define Max 24
+
+#if Max < 20
+    void test (){
+        printf("Max < 20\n");
+    }
+
+#elif Max == 20
+    void test (){
+        printf("Max == 20\n");
+    }
+
+#else 
+    void test (){
+        printf("Max > 20\n");
+    }
+
+#endif
+
+int main(){
+    test();
 }
 ```
