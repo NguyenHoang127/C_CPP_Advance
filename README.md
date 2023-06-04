@@ -56,3 +56,13 @@ int main(){
     test();
 }
 ```
+
+- Dùng `##` để nối chuỗi trong Marco và định nghĩa nhiều dòng bằng \
+```
+#define typeVar(type, name) type var_##name
+```
+```
+#define typeVar(type, name) type var_##name\
+                            type var1_##name\
+                            type var2_##name
+```
