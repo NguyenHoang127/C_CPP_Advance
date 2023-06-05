@@ -68,7 +68,8 @@ int main(){
 ```
 ---
 # Lesson 3: Input
-- va_list: Đây là một kiểu phù hợp để lưu trữ thông tin cần thiết bởi ba macro là va_start(), va_arg() và va_end().
+- va_list: Đây là một kiểu phù hợp để lưu trữ thông tin cần thiết bởi ba macro là va_start(), va_arg() và va_end()
+
 1. Macro va_start() trong C: void va_start(va_list ap, last_arg);
 2. Macro va_arg() trong C: type va_arg(va_list ap, type)
 3. Macro va_end() trong C: void va_end(va_list ap)
