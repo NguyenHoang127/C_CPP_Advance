@@ -188,5 +188,33 @@ extern uint8_t temp;
 
 - Text: 
   + Chứa các mã lệnh
+  + Quyền truy cập chỉ Read và nó chưa lệnh để thực thi nên tránh sửa đổi instruction.
+  + Chứa khai báo hằng số trong chương trình (.rodata)
     
-- 
+- Data Segment (DS)
+  + Các biến global và static được initialized các biến khác 0 bởi programmer
+  + Quyền truy cập là read-write.
+  + Được giải phóng khi kết thúc chương trình
+  + VD: int hex = 32;
+    
+- Uninitialized Data Segment (BSS)
+  + Các biến global và static không được initialized có thể bằng 0
+  + Quyền truy cập là read-write.
+  + Được giải phóng khi kết thúc chương trình.
+  + VD: int hex;
+    
+- Heap: Dynamic Memory Allocation (Vùng cấp phát bộ nhớ động)
+  + Control bằng các lệnh malloc/calloc/realloc
+  + Mỗi lần sử dụng Heap sẽ phình lên và ta có thể sử dụng lệnh free để giải phóng heap cứ mỗi lần như vậy Heap sẽ xẹp đi
+  + Nếu quên deallocate memory in Heap sẽ gây ra Memory Leak
+  + Quyền truy cập là read-write.
+    
+- Stack: Automatic Variable Storage (Cấp phát bộ nhớ tự động)
+  + Mỗi khi Function được gọi Function sẽ được để vào Function frame
+  + Quyền truy cập là read-write.
+  + Được sử dụng cấp phát cho biến local, input parameter của hàm,…
+  + Sẽ được giải phóng khi ra khỏi block code/hàm
+  + Stack gồm 4 phần chính: Function parameter, Return address, Saved previous frame pointer, Local variables
+ 
+<img src="https://i.imgur.com/dXcsbqM.png">
+  
