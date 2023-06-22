@@ -334,3 +334,32 @@ typedef struct
 //=> Kích thước biến struct tạo ra phụ thuộc vào cách sắp xếp 
 
 ```
+2. Union
+    - Giống như Struct, Union cũng là kiểu dữ liệu do người dùng định nghĩa.
+
+    - Giá trị của các biến trong Union có cùng một địa chỉ nên giá trị sau khi gán bởi giá trị trước
+
+    - Kích thước của Union là kích thước của member lớn nhất.
+```
+#include<stdio.h>
+#include<stdint.h>
+#include<string.h>
+
+typedef union 
+{
+    uint32_t var1;
+    uint16_t var2;
+    uint64_t var3;
+}typeData1;
+
+int main(int argc,char const *arvg)
+{
+    typeData1 value ={.var1=2,.var2=3};
+
+    printf("Test: %d\n",value.var1);                      //Output = 3
+    printf("Dia chi cua Union var1: %p\n",&(value.var1)); //Output = 0061FF10
+    printf("Dia chi cua Union var2: %p\n",&(value.var2)); //Output = 0061FF10
+    printf("Dia chi cua Union var3: %p\n",&(value.var3)); //Output = 0061FF10
+    return 0; 
+}
+```
