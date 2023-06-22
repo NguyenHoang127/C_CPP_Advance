@@ -363,3 +363,8 @@ int main(int argc,char const *arvg)
     return 0; 
 }
 ```
+---
+# Lesson 7: Goto & Setjum
+
+1. Goto
+   - 
