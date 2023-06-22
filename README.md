@@ -217,4 +217,5 @@ extern uint8_t temp;
   + Stack gồm 4 phần chính: Function parameter, Return address, Saved previous frame pointer, Local variables
  
 <img src="https://i.imgur.com/dXcsbqM.png">
+<img src="https://i.imgur.com/XocnW6D.png">
   
