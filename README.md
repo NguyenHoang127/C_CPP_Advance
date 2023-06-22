@@ -179,3 +179,7 @@ extern void count();
 extern uint8_t temp;
 
 ```
+---
+# Lesson 5: Phân Vùng Nhớ
+
+<img src="https://imgur.com/GSRPuKh">
