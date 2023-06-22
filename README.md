@@ -183,3 +183,9 @@ extern uint8_t temp;
 # Lesson 5: Phân Vùng Nhớ
 
 <img src="https://i.imgur.com/GSRPuKh.png">
+
+- Layout Chương Trình C trong memory gồm 5 phần chính:
+  + Text: 
+  Chứa các mã lệnh
+    
+- 
