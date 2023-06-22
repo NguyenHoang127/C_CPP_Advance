@@ -245,8 +245,9 @@ typedef struct
     //Hoac typeDate date = {23,5,2023};
 ``` 
 
-    - Kích thước của struct được tính bằng cách dựa vào member có giá trị lớn nhất có trong đó
-    - Ví dụ cụ thể
+- Kích thước của struct được tính bằng cách dựa vào member có giá trị lớn nhất có trong đó
+- Ví dụ cụ thể
+
 ```
 //Struct là kiểu dữ liệu do người dùng tự định nghĩa
 //Căn cứ vào member có kích thước lớn nhất mỗi lần quét là 4byte
