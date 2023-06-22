@@ -169,4 +169,4 @@ int main(int argc, char const *argv[])
 }
 ```
 
-<img src="[https://imgur.com/oHtV1x9)https://imgur.com/oHtV1x9]">
+<img src="https://imgur.com/oHtV1x9)https://imgur.com/oHtV1x9">
