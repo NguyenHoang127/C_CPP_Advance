@@ -170,3 +170,12 @@ int main(int argc, char const *argv[])
 ```
 
 <img src="https://i.imgur.com/oHtV1x9.png)https://i.imgur.com/oHtV1x9.png">
+
+3. Biến Extern: Cho phép truy cập từ 1 `file.c` khác có trong thư mục
+- Cú pháp compile: 'gcc extern.c library.c -o extern.c'
+
+```
+extern void count();
+extern uint8_t temp;
+
+```
