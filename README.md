@@ -185,7 +185,8 @@ extern uint8_t temp;
 <img src="https://i.imgur.com/GSRPuKh.png">
 
 - Layout Chương Trình C trong memory gồm 5 phần chính:
-  + Text: 
-  Chứa các mã lệnh
+
+- Text: 
+  + Chứa các mã lệnh
     
 - 
