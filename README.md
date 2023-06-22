@@ -182,4 +182,4 @@ extern uint8_t temp;
 ---
 # Lesson 5: Phân Vùng Nhớ
 
-<img src="https://imgur.com/GSRPuKh">
+<img src="https://imgur.com/GSRPuKh](https://i.imgur.com/GSRPuKh.png)https://i.imgur.com/GSRPuKh.png">
