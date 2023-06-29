@@ -406,8 +406,8 @@ int main(int argc,char const *argv[])
 ```
 ---
 # Lesson 8: Pointer
-    - Bản chất ram bao gồm giá trị và địa chỉ 
-    - Để lưu giá trị địa chỉ của 1 biến ta có thể khai báo và sử dụng con trỏ
+- Bản chất ram bao gồm giá trị và địa chỉ 
+- Để lưu giá trị địa chỉ của 1 biến ta có thể khai báo và sử dụng con trỏ
 ```
 int a = 10;
 int *pa = &a;              //Tạo biến con trỏ và trỏ lưu địa chỉ biến a
@@ -420,4 +420,35 @@ int *pa = &a;              //Tạo biến con trỏ và trỏ lưu địa chỉ 
     printf("C2. Dia Chi a: %p \n",pa); //Lấy địa chỉ
 ```
 
-1. Để thay đổi giá trị của 1 hàm con ta cần truy
+1. Để thay đổi giá trị của 1 hàm con ta cần truy xuất đến đúng địa chỉ để thay đổi
+```
+void swap2(int *a,int *b) //2 Địa chỉ của hàm này là địa chỉ 2 số đầu vào
+{
+    printf("So a: %d,dia chi: %p\n",*a,a);
+    printf("So b: %d,dia chi: %p\n",*b,b);
+
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main(int argc, char const *argv)
+{
+    int so1 = 10;
+    int so2 = 20;
+
+    printf("Truoc Swap so1: %d,dia chi: %p\n",so1,&so1); //10
+    printf("Truoc Swap so2: %d,dia chi: %p\n",so2,&so2); //20
+
+    swap2(&so1,&so2);
+
+    printf("Sau Swap so1: %d,dia chi: %p\n",so1,&so1); //20
+    printf("Sau Swap so2: %d,dia chi: %p\n",so2,&so2); //10
+
+
+    return 0;
+}
+```
+---
+# Lesson 10: 
