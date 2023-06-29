@@ -367,4 +367,57 @@ int main(int argc,char const *arvg)
 # Lesson 7: Goto & Setjum
 
 1. Goto
-   - 
+   - Cung cấp 1 bước nhảy từ 'goto' đến một câu lệnh có label
+   - Ví dụ:
+```
+      label:
+      statement(
+      goto label:
+      )
+```
+2. Setjum
+   - Tương tự như Goto
+   - Sử dụng thư viện setjmp.h để dùng setjum
+```
+#include<stdio.h>
+#include<stdint.h>
+#include<setjmp.h>
+
+int main(int argc,char const *argv[])
+{
+    jmp_buf jumb;
+    int i = setjmp(jumb);
+    
+    printf("i=%d \n",i);
+
+    //Thoat khoi chuong trinh khi i=1
+    if(i!=0)
+    {
+        exit(0);
+    }
+
+    //Trả về giá trị jumb bằng 1 bằng cách quay lại lên trên vị trí setjmp
+    longjmp(jumb,1);
+
+    printf("test\n");
+    return 0;
+    
+}
+```
+---
+# Lesson 8: Pointer
+    - Bản chất ram bao gồm giá trị và địa chỉ 
+    - Để lưu giá trị địa chỉ của 1 biến ta có thể khai báo và sử dụng con trỏ
+```
+int a = 10;
+int *pa = &a;              //Tạo biến con trỏ và trỏ lưu địa chỉ biến a
+    *pa = 27;                  //Trỏ đến địa chỉ biến a và lưu giá trị bằng 27
+
+    printf("C1. Gia tri a: %d\n",a);    //Khi này giá trị a = 27
+    printf("C2. Gia tri a: %d\n",*pa);
+
+    printf("C1. Dia Chi a: %p \n",&a); //Lấy địa chỉ
+    printf("C2. Dia Chi a: %p \n",pa); //Lấy địa chỉ
+```
+
+1. Để thay đổi giá trị của 1 hàm con ta cần truy
