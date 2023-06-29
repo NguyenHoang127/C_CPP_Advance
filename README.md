@@ -451,4 +451,8 @@ int main(int argc, char const *argv)
 }
 ```
 ---
-# Lesson 10: 
+# Lesson 10: LinkList
+
+1. Tổng quan
+    - Để giải quyết bài toán chèn thêm các phần tử vào mảng ta sử dụng mảng nhân tạo thay cho mảng truyền thống
+    - 
